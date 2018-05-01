@@ -9,8 +9,76 @@
 //  ----HEADER----
 #header{
   background-color: $pimary-color;
-  height: 78px;
+  padding: 25px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+.nav-btn {
+  position: relative;
+  max-height: 19px;
+  margin-right: auto;
+
+
+  .line {
+    position: absolute;
+    background-color: $primary-white;
+    width: 25px;
+    height: 3px;
+    content: '';
+  }//----.line----
+  .hight{
+    top: -10px;
+  }//.hight
+  .middle{
+    bottom: 0;
+    transform: translateY(50%);
+    width: 18px;
+  }//----.middle----
+  .bottom{
+    bottom: -10px;
+  }
+}//----.nav-btn----
+
+#header{
+  .search{
+    margin-right: 20px;
+    font-size: 12px;
+    color: $primary-white;
+  }//.search
+}//#header
+
+.user{
+  display: flex;
+  flex-direction: row;
+
+  img{
+    margin-right: 25px;
+  }
+  .user-wrap{
+    display: flex;
+    flex-direction: column;
+
+    .user-name{
+      color: $primary-white;
+      font-size: 15px;
+      font-weight: 700;
+    }//.user-name
+
+    .user-dropdown{
+      color: #2775a9;
+      font-size: 12px;
+      font-weight: 400;
+
+    }//.user-dropdown
+    i{
+      margin-left: 45px;
+    }
+  }//.user-wrap
+}//.user
+
+
+
 
 
 // ---- MAIN----
